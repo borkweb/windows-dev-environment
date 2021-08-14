@@ -19,6 +19,10 @@ wsl --set-default-version 2
 
 Next, install the Linux distro of your choice (Ubuntu) via the Microsoft Store.
 
+## [Remote Development pack](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack)
+
+This allows you to edit code in VSCode that lives on the WSL.
+
 ## [Microsoft Terminal](https://github.com/microsoft/terminal)
 
 Search for Winows Terminal in the Microsoft Store.
