@@ -16,7 +16,13 @@ export PATH=$HOME/bin:$PATH
 
 ## Utilities
 
-### Bat, a better `cat`
+### `ag` (silversearcher-ag), faster than grep
+
+```
+sudo apt install silversearcher-ag
+```
+
+### `bat`, a better `cat`
 
 Install and link it:
 
@@ -35,52 +41,52 @@ echo "alias cat='bat'" >> ~/.bashrc
 echo "alias cat='bat'" >> ~/.zshrc
 ```
 
-### Exa, a better `ls`
+### `exa`, a better `ls`
 
 Install `exa` via direct downloading the binary from the **Releases** page of the [exa repo](https://github.com/ogham/exa) and moving it to `~/bin`.
 
-### [Powerline](https://github.com/powerline/powerline)
+### `fd`, a better `find`
+
+```
+sudo apt install fd-find
+ln -s $(which fdfind) ~/bin/fd
+```
+
+### `tmux`, a terminal multiplexer
+
+```
+sudo apt install tmux
+```
+
+### `z`, a helpful jump command
+
+If using zsh, rather than using `z` as a separate package, [use zsh-z](https://github.com/agkozak/zsh-z). If using oh-my-zsh, use this approach:
+
+```
+git clone https://github.com/agkozak/zsh-z $ZSH_CUSTOM/plugins/zsh-z
+```
+
+Then add `zsh-z` to the line of your `.zshrc` that specifies `plugins=()`, e.g., `plugins=( git zsh-z )`.
+
+## Prompt
+
+### [powerlevel10k](https://github.com/romkatv/powerlevel10k)
 
 #### Install
+
+Installing via oh-my-zsh:
+
 ```
-sudo apt install powerline
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 ```
+
+Find `ZSH_THEME` in your `~/.zshrc` and change it to:
+
+```
+ZSH_THEME="powerlevel10k/powerlevel10k"
+```
+
+Close your shell window and re-open to get prompted.
 
 #### Fonts
 You'll need [powerline fonts](https://github.com/powerline/fonts) and use those within your terminal. Follow [this blog post](https://medium.com/@slmeng/how-to-install-powerline-fonts-in-windows-b2eedecace58) for installing on WSL.
-
-#### [Adding the prompt](https://www.ricalo.com/blog/install-powerline-windows/)
-
-If using bash, add the following to your `.bashrc`:
-
-```
-if [ -f /usr/share/powerline/binding/bash/powerline.sh ]; then
-	powerline-daemon -q
-	source /usr/share/powerline/bindings/bash/powerline.sh
-fi
-```
-
-If using zsh, add the following to your `.zshrc`:
-
-```
-if [ -f /usr/share/powerline/binding/zsh/powerline.zsh ]; then
-	powerline-daemon -q
-	source /usr/share/powerline/bindings/zsh/powerline.zsh
-fi
-```
-
-#### Adding the prompt in vim or nvim
-
-In `~/.vimrc` or `~/.config/nvim/init.vim`:
-
-```
-python3 from powerline.vim import setup as powerline_setup
-python3 powerline_setup()
-python3 del powerline_setup
-
-set laststatus=2
-```
-
-#### Add git status colors in powerline
-
-Rather than replay the steps here, I'll just point to [this blog post](https://kentakodashima.medium.com/customize-your-terminal-prompt-with-powerline-ed6eb884fabb).
