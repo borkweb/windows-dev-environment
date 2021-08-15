@@ -27,3 +27,15 @@ Like PHPStorm, to work with projects in WSL, you need to add the [Remote Develop
 * From the dropdown at the top, select **WSL Targets**
 
 This will open up a new window under the WSL and you can navigate and open folders as normal.
+
+#### Setting up Xdebug for a Lando-based project
+
+1. Create a `.vscode/` directory in your project root:
+
+```
+mkdir .vscode
+```
+
+2. Copy the [`launch.json`](editor/vscode/launch.json) file from this repo to the `.vscode/` directory.
+
+That's it! Now you can debug happily in VSCode.

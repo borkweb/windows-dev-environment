@@ -29,6 +29,6 @@ Search for Winows Terminal in the Microsoft Store.
 
 ## Docker
 
-Install [Docker for Windows](https://hub.docker.com/editions/community/docker-ce-desktop-windows/)
+Install [Docker for Windows](https://hub.docker.com/editions/community/docker-ce-desktop-windows/). If prompted, install the WSL2 Backend.
 
-**IMPORTANT NOTE:** Do _not_ install with the WSL 2 backend. Otherwise [Lando](environmnets.md) will not install cleanly.
+**IMPORTANT NOTE:** Do _not_ install docker on the Linux subsystem via apt-get. You _must_ install Docker for Windows Desktop.

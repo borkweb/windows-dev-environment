@@ -1,0 +1,9 @@
+config:
+  config:
+    php: .lando/php.wsl.ini
+services:
+  appserver:
+    overrides:
+      environment:
+        LANDO_HOST_IP: "host.docker.internal"
+        XDEBUG_CONFIG: "client_host=host.docker.internal"
