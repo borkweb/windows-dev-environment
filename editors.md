@@ -38,4 +38,4 @@ mkdir .vscode
 
 2. Copy the [`launch.json`](editor/vscode/launch.json) file from this repo to the `.vscode/` directory.
 
-That's it! Now you can debug happily in VSCode.
+That's it! Now you you'll be able to happily debug in VSCode once you follow the steps for setting up a [Lando environment](environments.md).
