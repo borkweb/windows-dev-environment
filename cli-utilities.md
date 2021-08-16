@@ -1,6 +1,10 @@
 # CLI Utilities
 
+Just a quick note. When you open up a WSL prompt, you may be dropped into your Windows home directory rather than your WSL home directory. Simply type `cd` and you'll relocate yourself.
+
 ## Pre-requisites
+
+### `~/bin`
 
 Create a `~/bin` directory and add it to your `$PATH`.
 
@@ -12,6 +16,18 @@ Add it to your `.bashrc` or `.zshrc`:
 
 ```
 export PATH=$HOME/bin:$PATH
+```
+
+### Helpful symlinks
+
+I like to have easy access to some of my files in Windows, so I symlink them to my home directory:
+
+```
+cd ~/
+ln -s /mnt/c/Users/YOUR_WINDOWS_USER/Desktop
+ln -s /mnt/c/Users/YOUR_WINDOWS_USER/Documents
+ln -s /mnt/c/Users/YOUR_WINDOWS_USER/Downloads
+ln -s /mnt/c/Users/YOUR_WINDOWS_USER/Dropbox
 ```
 
 ## Utilities
