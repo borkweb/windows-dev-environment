@@ -2,6 +2,12 @@
 
 Just a quick note. When you open up a WSL prompt, you may be dropped into your Windows home directory rather than your WSL home directory. Simply type `cd` and you'll relocate yourself.
 
+To change your default home directory, check out [these instructions](https://docs.microsoft.com/en-us/windows/terminal/troubleshooting#set-your-wsl-distribution-to-start-in-the-home--directory-when-launched). Here's what I set as my default home directory in the Windows Terminal settings:
+
+```
+//wsl$/Ubuntu-20.04/home/matt
+```
+
 ## Pre-requisites
 
 ### `~/bin`
