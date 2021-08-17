@@ -4,8 +4,14 @@
 
 Open PowerShell as an Administrator and run:
 
+If on Windows Pro:
 ```
 Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V -All
+```
+
+If on Windows Home:
+```
+dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
 ```
 
 ## WSL
