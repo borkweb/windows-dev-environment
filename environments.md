@@ -5,7 +5,7 @@
 Ensuring Docker runs swimmingly for Lando, there are a few hoops that need to be jumped through. Here are some steps that are typical:
 
 1. Start Docker Desktop.
-2. Go to Docker Desktop Settings and ensure that __Use the WSL 2 based engine_ is checked.
+2. Go to Docker Desktop Settings and ensure that _Use the WSL 2 based engine_ is checked.
 3. Restart your computer (yeah, I know. This step is lame.)
 4. Start Docker Desktop _again_ and you'll receive a notification that Docker is connecting to the WSL2 Backend engine
 5. You'll then (likely) get a System Security Network prompt asking if you want to let Docker use the network connection. The answer is: Yes, only on private networks.
