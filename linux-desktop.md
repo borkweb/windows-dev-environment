@@ -2,6 +2,10 @@
 
 [Reference](https://codeburst.io/how-to-install-ubuntu-desktop-with-a-graphical-user-interface-in-wsl2-95911ee2997f)
 
+## Install [PowerToys](https://github.com/microsoft/PowerToys)
+
+This gives you some nice shortcuts and helpful tools for Windows. The alt+space keys brings up a quick bar that includes Ubuntu applications.
+
 ## Install [VcXsrv](https://sourceforge.net/projects/vcxsrv/)
 
 This is an X11 Server.
