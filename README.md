@@ -8,3 +8,4 @@ How I set up my Windows dev environment with WSL
 1. [CLI Utilities](cli-utilities.md)
 1. [Editors & IDEs](editors.md)
 1. [Environments](environments.md)
+1. [Linux desktop](linux-desktop.md)
