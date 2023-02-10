@@ -2,7 +2,7 @@
 	"version": "0.2.0",
 	"configurations": [
 		{
-			"name": "Listen for XDebug",
+			"name": "XDebug",
 			"type": "php",
 			"request": "launch",
 			"hostname": "0.0.0.0",
@@ -10,6 +10,21 @@
 			"log": false,
 			"pathMappings": {
 				"/app/": "${workspaceFolder}/"
+			},
+			"xdebugSettings": {
+				"max_children": 999
+			}
+		},
+		{
+			"name": "Slic XDebug",
+			"type": "php",
+			"request": "launch",
+			"hostname": "localhost",
+			"port": 9003,
+			"log": false,
+			"pathMappings": {
+				"/var/www/html": "${userHome}/git/slic/_wordpress",
+				"/var/www/html/wp-content/plugins": "${workspaceFolder}/wp/wp-content/plugins"
 			},
 			"xdebugSettings": {
 				"max_children": 999
